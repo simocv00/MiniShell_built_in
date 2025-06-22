@@ -4,7 +4,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 LIBS = -lreadline
 
-SRC = create_env_node.c ft_cd.c ft_env.c ft_putstr_fd.c ft_strcmp.c helper_func.c ft_export.c ft_echo.c ft_exit.c ft_pwd.c get_env_str.c main.c
+SRC = create_env_node.c ft_cd.c ft_env.c ft_putstr_fd.c ft_strcmp.c helper_func.c export_map.c ft_echo.c ft_exit.c ft_pwd.c get_env_str.c main.c ft_unset.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

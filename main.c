@@ -106,6 +106,8 @@ int built_in(char *str,char **cmd_splited){
 				return (ft_export(cmd_splited));
 			else if(ft_strcmp("exit",cmd_splited[0]) == 0)
 				return (ft_exit(cmd_splited,str));
+			else if(ft_strcmp("unset",cmd_splited[0]) == 0)
+				return(ft_unset(cmd_splited));
 	return (-1);
 }
 int main(int ac , char **av, char **env){
